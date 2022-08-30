@@ -12,9 +12,7 @@ include('conncet.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <title>
-
-    </title>
+    <title>Registration</title>
 
     <style>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
@@ -220,8 +218,6 @@ include('conncet.php');
             $email = $_POST['mail'];
          
 
-
-        
             $sql = "select *from user where User_ID = '$username' and pin = '$password'";
             $result = mysqli_query($conn, $sql);  
             $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
