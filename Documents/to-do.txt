@@ -1,0 +1,12 @@
+Known Bugs and Missing Features:
+
+-> Anyone can view any page using the file index
+	- Can be solved by letting only the logged in users viewing the pages
+
+-> Edit profile page isn't updating the profile
+
+-> A sign out button has to be added
+
+-> Number of seats left for bus after booking a seat can go below 0
+	- Can be fixed using a conditional statement
+
