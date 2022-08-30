@@ -7,6 +7,8 @@ Known Bugs and Missing Features:
 
 -> A sign out button has to be added
 
+-> Forget password option has to be added
+
 -> Number of seats left for bus after booking a seat can go below 0
 	- Can be fixed using a conditional statement
 
