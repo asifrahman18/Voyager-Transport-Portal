@@ -101,17 +101,6 @@ include('conncet.php');
         transform: scale(1.1);
     }
 
-    /* .container i {
-        padding-left: 20px;
-        font-size: 20px;
-        margin-bottom: 20px;
-        cursor: pointer;
-        transition: .5s;
-    }
-
-    .container i:hover {
-        color: #03bfbc;
-    } */
 
 
     #nav_bar {
@@ -201,17 +190,6 @@ include('conncet.php');
         </div>
 
 
-
-
-
-
-
-        <!-- <div class="profile-name"></div>
-        <p class="about">
-        <p></p>
-        <br>
-        <p></p>
-        </p> -->
         <br>
         <form action="edit.php" method="POST">
             <input type="submit" name="edt" class="msg-btn" value="Edit Account"></input>

@@ -218,14 +218,7 @@ include('conncet.php');
             $username = $_POST['user'];  
             $password = $_POST['pass'];
             $email = $_POST['mail'];
-        
-            // //to prevent from mysqli injection  
-            // $username = stripcslashes($username);  
-            // $password = stripcslashes($password);
-            // $email = stripcslashes($email);
-            // $username = mysqli_real_escape_string($conn, $username);  
-            // $password = mysqli_real_escape_string($conn, $password);  
-            // $email = mysqli_real_escape_string($conn, $email);  
+         
 
 
         

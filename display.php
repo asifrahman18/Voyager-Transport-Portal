@@ -296,10 +296,6 @@ include('conncet.php');
             </tr>
         </thead>
         <tbody>
-            <!-- <tr>
-            <td>16</td>
-            <td>14</td>
-        </tr> -->
 
 
             <?php
@@ -324,7 +320,7 @@ include('conncet.php');
                 $result = $conn->query($query);
 
                 if ($result->num_rows > 0) {
-                // output data of each row
+               
                 while($row = $result->fetch_assoc()) {
                 ?>
 
@@ -341,7 +337,7 @@ include('conncet.php');
                     
                 }
                 } else {
-                echo "0 results";
+                echo "No Bus available";
                 }
 
                 exit();
