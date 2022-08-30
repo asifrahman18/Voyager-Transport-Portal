@@ -211,7 +211,7 @@ include('conncet.php');
             </div>
             <input type="submit" name="sbmt" value="UPDATE" />
             <div class="signup_link">
-                Changed your mind? <a href="profile.php">Go Back</a>
+                Changed your mind? <a href="search.php">Go Back</a>
             </div>
         </form>
     </div>
