@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 29, 2022 at 04:51 AM
+-- Generation Time: Aug 30, 2022 at 01:18 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -47,7 +47,9 @@ INSERT INTO `booking` (`User_ID`, `Bus_ID`, `Booking_ID`) VALUES
 (0, 901, 8799),
 (4444, 809, 9009),
 (5555, 1001, 43299),
-(7777, 103, 99876);
+(7777, 103, 99876),
+(2012691, 101, 99877),
+(2012691, 1797, 99878);
 
 -- --------------------------------------------------------
 
@@ -68,7 +70,7 @@ CREATE TABLE `bus` (
 --
 
 INSERT INTO `bus` (`Bus_Name`, `Bus_ID`, `Route_ID`, `Type`, `Seat_lft`) VALUES
-('RIDE ROSE', 101, 336, 'ac', 20),
+('RIDE ROSE', 101, 336, 'ac', 19),
 ('RUNNER', 103, 38836, 'non-ac', 6),
 ('PARIS PARADISE', 201, 346, 'non-ac', 12),
 ('DREAM LINE', 301, 3366, 'ac', 6),
@@ -106,7 +108,7 @@ INSERT INTO `bus` (`Bus_Name`, `Bus_ID`, `Route_ID`, `Type`, `Seat_lft`) VALUES
 ('calculation', 1740, 3386, 'NON AC', 14),
 ('exploit', 1771, 3136, 'NON AC', 6),
 ('gem', 1786, 3386, 'AC', 17),
-('stem', 1797, 336, 'AC', 12),
+('stem', 1797, 336, 'AC', 11),
 ('evoke', 1812, 346, 'AC', 7),
 ('bark', 1849, 346, 'AC', 6),
 ('attachment', 1862, 336, 'AC', 19),
@@ -187,8 +189,7 @@ INSERT INTO `user` (`Name`, `User_ID`, `pin`, `Email`) VALUES
 ('Moris', 3333, 242526, 'm@voyager.com'),
 ('Evan', 4444, 303132, 'e@voyager.com'),
 ('Roger', 5555, 212223, 'r@voyager.com'),
-('Steven', 6666, 1234, 's@voyager.com'),
-('Jon', 7777, 5678, 'jon@voyager.com'),
+('Jon', 7777, 0, 'em@il.com'),
 ('David', 8888, 91011, 'd@voyager.com'),
 ('Pablo', 9999, 272829, 'p@voyager.com'),
 (NULL, 323635, 852852, 'email@gmail.com'),
@@ -221,6 +222,16 @@ ALTER TABLE `route`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`User_ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `booking`
+--
+ALTER TABLE `booking`
+  MODIFY `Booking_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99879;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
