@@ -1,4 +1,0 @@
-- PHP codes got stuck in a loop
-- Header already sent
-- Session already sent
-- display.php not showing output
